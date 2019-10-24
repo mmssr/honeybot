@@ -1,0 +1,391 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Main &mdash; HoneyBot 5.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Plugins" href="plugins.html" />
+    <link rel="prev" title="Welcome to HoneyBot’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/honeybot_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Main</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bot-core">Bot_core</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#message-validation">Message Validation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#message-util">Message util</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bot-util">Bot util</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setup-requirements">Setup requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#message-parsing">Message parsing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bot-irc-functions">Bot IRC Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ongoing-requirement-s">Ongoing requirement/s</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how_to.html">How Tos</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HoneyBot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Main</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/pyhoneybot/honeybot/blob/master/docs/source/main.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-main">
+<span id="main"></span><h1>Main<a class="headerlink" href="#module-main" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="bot-core">
+<h2>Bot_core<a class="headerlink" href="#bot-core" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="main.Bot_core">
+<em class="property">class </em><code class="sig-name descname">Bot_core</code><span class="sig-paren">(</span><em class="sig-param">password=''</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<div class="section" id="message-validation">
+<h3>Message Validation<a class="headerlink" href="#message-validation" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Description of message validation section</p>
+<dl class="method">
+<dt id="main.Bot_core.message_info">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">message_info</code><span class="sig-paren">(</span><em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.message_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="main.Bot_core.bot_info">
+<code class="sig-name descname">bot_info</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.bot_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="message-util">
+<h3>Message util<a class="headerlink" href="#message-util" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Message util Description</p>
+<dl class="method">
+<dt id="main.Bot_core.send">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">send</code><span class="sig-paren">(</span><em class="sig-param">msg</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.send" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.send_target">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">send_target</code><span class="sig-paren">(</span><em class="sig-param">target</em>, <em class="sig-param">msg</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.send_target" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.join">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">join</code><span class="sig-paren">(</span><em class="sig-param">channel</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.join" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="bot-util">
+<h3>Bot util<a class="headerlink" href="#bot-util" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Bot util Description</p>
+<dl class="method">
+<dt id="main.Bot_core.load_plugins">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">load_plugins</code><span class="sig-paren">(</span><em class="sig-param">plugins_to_load</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.load_plugins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load plugins that are specified in the plugins list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>plugins_to_load</strong> (<em>list of str</em>) – List of plugins to load.</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.configfile_to_list">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">configfile_to_list</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.configfile_to_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.methods">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">methods</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.methods" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.run_plugins">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">run_plugins</code><span class="sig-paren">(</span><em class="sig-param">listfrom</em>, <em class="sig-param">incoming</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.run_plugins" title="Permalink to this definition">¶</a></dt>
+<dd><p>incoming is the unparsed string. refer to test.py</p>
+</dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="setup-requirements">
+<h3>Setup requirements<a class="headerlink" href="#setup-requirements" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Setup requirements Description</p>
+<dl class="method">
+<dt id="main.Bot_core.requirements">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">requirements</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.requirements" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.memory_add_value">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">memory_add_value</code><span class="sig-paren">(</span><em class="sig-param">memfile</em>, <em class="sig-param">section</em>, <em class="sig-param">key</em>, <em class="sig-param">value</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.memory_add_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.memory_remove_value">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">memory_remove_value</code><span class="sig-paren">(</span><em class="sig-param">memfile</em>, <em class="sig-param">section</em>, <em class="sig-param">key</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.memory_remove_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.memory_fetch_value">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">memory_fetch_value</code><span class="sig-paren">(</span><em class="sig-param">memfile</em>, <em class="sig-param">section</em>, <em class="sig-param">key</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.memory_fetch_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="message-parsing">
+<h3>Message parsing<a class="headerlink" href="#message-parsing" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Message parsing Description</p>
+<dl class="method">
+<dt id="main.Bot_core.core_commands_parse">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">core_commands_parse</code><span class="sig-paren">(</span><em class="sig-param">incoming</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.core_commands_parse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="bot-irc-functions">
+<h3>Bot IRC Functions<a class="headerlink" href="#bot-irc-functions" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Bot IRC Functions Description</p>
+<dl class="method">
+<dt id="main.Bot_core.connect">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">connect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.connect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.identify">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">identify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.identify" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.greet">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">greet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.greet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.pull">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">pull</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.pull" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="ongoing-requirement-s">
+<h3>Ongoing requirement/s<a class="headerlink" href="#ongoing-requirement-s" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Ongoing requirement/s Description</p>
+<dl class="method">
+<dt id="main.Bot_core.stay_alive">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">stay_alive</code><span class="sig-paren">(</span><em class="sig-param">incoming</em><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.stay_alive" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.registered_run">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">registered_run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.registered_run" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO</p>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.Bot_core.unregistered_run">
+<code class="sig-prename descclassname">Bot_core.</code><code class="sig-name descname">unregistered_run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Bot_core.unregistered_run" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO</p>
+<p class="rubric">Examples</p>
+<p>TODO</p>
+</dd></dl>
+
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="plugins.html" class="btn btn-neutral float-right" title="Plugins" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to HoneyBot’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Abdur-rahmaanJ
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
